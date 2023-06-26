@@ -98,3 +98,6 @@ version of Spark without needing to rebuild.
 | -Pspark3     | Choose Spark 3.x based build dependencies                          |
 | -Pscala-2.11 | Choose Scala 2.11 based build dependencies (default configuration) |        
 | -Pscala-2.12 | Choose scala 2.12 based build dependencies                         |
+
+### OGE
+mvn clean package -B -V -e -Pspark3 -Pscala-2.12 -DskipTests -DskipITs -Dmaven.javadoc.skip -Pthriftserver
